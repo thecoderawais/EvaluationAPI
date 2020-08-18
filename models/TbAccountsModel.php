@@ -17,7 +17,7 @@ class TbAccountsModel
     public function read() {
         // Create query
         $query = 'SELECT 
-        AC_NO, AC_NAME, OP_DEBIT, OP_CREDIT, OP_DATE, ADDRESS
+        AC_CODE, AC_NAME, OP_DEBIT, OP_CREDIT, OP_DATE, ADDRESS
       FROM
         tbaccounts';
 
