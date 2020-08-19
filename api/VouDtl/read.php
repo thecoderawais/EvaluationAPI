@@ -42,8 +42,8 @@ if($num > 0) {
             'AC_NO' => $AC_NO,
             'AC_TITLE' => $AC_TITLE,
             'DESCRIPTION' => $DESCRIPTION,
-            'DEBIT' => $DEBIT,
-            'CREDIT' => $CREDIT,
+            'VDEBIT' => $VDEBIT,
+            'V_CREDIT' => $V_CREDIT,
             'OPENING_BALANCE' => $OPENING_BALANCE,
         );
 

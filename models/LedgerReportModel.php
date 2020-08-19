@@ -8,17 +8,17 @@
 
 class LedgerReportModel
 {
-        public $V_NO ;
-        public $V_DATE ;
-        public $AC_NO ;
-        public $AC_TITLE ;
-        public $DESCRIPTION ;
-        public $DEBIT ;
-        public $CREDIT ;
-        public $OPENING_BALANCE;
-        public $FROM_DATE;
-        public $TO_DATE;
-        public $Where_Clause;
+    public $V_NO ;
+    public $V_DATE ;
+    public $AC_NO ;
+    public $AC_TITLE ;
+    public $DESCRIPTION ;
+    public $VDEBIT ;
+    public $V_CREDIT ;
+    public $OPENING_BALANCE;
+    public $FROM_DATE;
+    public $TO_DATE;
+    public $Where_Clause;
 
     // Constructor with DB
     public function __construct($db) {
@@ -57,8 +57,6 @@ class LedgerReportModel
         voudtl JOIN tbaccounts ON AC_NO = AC_CODE ' . $whereClause;
 //        WHERE AC_NO= :AC_NO AND V_DATE BETWEEN :FROM_DATE and :TO_DATE';
 
-        echo $query;
-        exit();
 
         // Prepare statement
         $stmt = $this->conn->prepare($query);
